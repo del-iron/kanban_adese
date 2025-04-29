@@ -1,0 +1,232 @@
+/* Estilo geral da aplicação */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to top left, #ec008c, #673ab7);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #4b0082, #5a0845);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #5a0845, #4b0082);
+}
+
+.google-btn {
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    color: #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #7b5dfa;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #5a3dbf;
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #7b5dfa;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.board-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #4b0082
+}
+
+.board {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.column h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4b31bd;
+    margin-bottom: 10px;
+}
+
+.task-list {
+    flex: 1;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+.add-task-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg, #4b0082, #5a0845);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.add-task-btn:hover {
+    background: linear-gradient(135deg, #5a0845, #4b0082);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #4b0082, #5a0845);
+    color: #fff;
+    border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.top-bar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 14px;
+    color: white
+}
+
+.btn-top-bar {
+    background-color: #7b5dfa;
+    color: white; 
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.btn-top-bar:hover {
+    background-color: #5a3dbf;
+}
+
+@media (max-width: 768px) {
+    .board {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

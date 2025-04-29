@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+    <div class="top-bar">
+        Não tem uma conta? <a href="php/users/register.php" class="btn-top-bar">Criar uma conta</a>
+    </div>
+    <div class="container">
+        <h2>Bem-vindo de volta!</h2>
+        <button class="google-btn">Continuar com o Google</button>
+        <p>OU</p>
+        <form action="php/users/login.php" method="POST">
+            <input type="email" name="email" placeholder="Insira o seu e-mail de trabalho" class="input-field" required>
+            <input type="password" name="password" placeholder="Insira a senha" class="input-field" required>
+            <a class="link" href="#">Esqueceu a senha?</a>
+            <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+        <a class="link" href="#">Ou faça login com SSO</a>
+    </div>
+    <div class="footer-text">
+        Este site é protegido pelo Jardel e regido pela política de privacidade e pelos termos de serviço da Adese.
+    </div>
+</body>
+</html>
