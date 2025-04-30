@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Tarefa - Em Progresso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Adicionar Tarefa à Coluna "Em Progresso"</h2>
+        <form id="task-form">
+            <label for="title">Título:</label>
+            <input type="text" id="title" name="title" class="input-field" required>
+
+            <label for="description">Descrição:</label>
+            <textarea id="description" name="description" class="input-field" rows="4" required></textarea>
+
+            <button type="submit" class="btn-primary">Adicionar Tarefa</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('task-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const title = document.getElementById('title').value;
+            const description = document.getElementById('description').value;
+
+            console.log('Tarefa adicionada à coluna "Em Progresso":', { title, description });
+
+            window.location.href = 'board.html';
+        });
+    </script>
+</body>
+</html>

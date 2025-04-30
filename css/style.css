@@ -169,22 +169,24 @@ header h1 {
     border-radius: 4px;
     overflow-y: auto;
     max-height: 400px;
+    
 }
 
 .add-task-btn {
     margin-top: 10px;
     padding: 10px;
-    background: linear-gradient(135deg, #4b0082, #5a0845);
+    background: linear-gradient(135deg, #4b0082, #5a0845) !important;
     color: #fff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
     transition: background 0.3s;
+    text-align: center;
 }
 
 .add-task-btn:hover {
-    background: linear-gradient(135deg, #5a0845, #4b0082);
+    background: linear-gradient(135deg, #5a0845, #4b0082) !important;
 }
 
 footer {
